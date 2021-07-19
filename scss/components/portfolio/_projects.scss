@@ -1,18 +1,36 @@
 .projects-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-  padding-bottom: 94px;
+  margin-bottom: 60px;
 
-  margin-left: $negative-list-gap;
-  margin-top: $negative-list-gap;
+  @media screen and (min-width: 768px) {
+
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
 }
 
 .projects-list__item {
-  flex-basis: calc((100% / 3) - 30px);
 
-  margin-left: $project-list-gap;
-  margin-top: $project-list-gap;
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) {
+
+    display: flex;
+
+
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    flex-basis: calc((100% / 3) - 30px);
+    
+  }
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
