@@ -21,6 +21,8 @@ p {
 }
 
 img {
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -893,14 +895,32 @@ body {
   fill: #ffffff;
 }
 
-.filter {
-  padding-bottom: 50px;
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-top: 94px;
+  }
 }
 
 .filter-list {
   display: flex;
-  padding-top: 94px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+  }
+}
+
+.filter-list__item {
+  margin-top: 15px;
 }
 
 .filter-list__item:not(:last-child) {
@@ -928,10 +948,10 @@ body {
 }
 
 .projects-list {
+  margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 60px;
 }
 
@@ -939,24 +959,41 @@ body {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-list {
+    display: flex;
+    margin-top: 50px;
   }
 }
 
 .projects-list__item {
-  margin-top: 30px;
+  width: 100%;
+  border: 1px solid #eeeeee;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.projects-list__item:not(:first-child) {
+  margin-top: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .projects-list__item {
-    display: flex;
+    margin-bottom: 30px;
+    width: calc((100% - 32px) / 2);
+  }
+  .projects-list__item:not(:first-child) {
+    margin-top: 0px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list__item {
-    flex-basis: calc((100% / 3) - 30px);
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -977,8 +1014,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   padding: 63px 24px;
   transform: translateY(101%);
   transition: transform 250ms ease;
@@ -991,7 +1028,6 @@ body {
 
 .projects-subject {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
 }
 
 .projects-subject__title {
