@@ -57,10 +57,12 @@
 
 .contact-footer {
   padding-top: 9px;
-  padding-bottom: 60px;
+
 }
 
 .contact-footer__link {
+  display: block;
+  margin-top: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14em;

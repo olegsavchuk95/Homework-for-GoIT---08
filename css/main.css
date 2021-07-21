@@ -1092,10 +1092,11 @@ body {
 
 .contact-footer {
   padding-top: 9px;
-  padding-bottom: 60px;
 }
 
 .contact-footer__link {
+  display: block;
+  margin-top: 9px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14em;
@@ -1190,7 +1191,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer-form__title {
-    margin-top: 0px;
+    margin-top: 8px;
     padding-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
