@@ -388,6 +388,7 @@ body {
 
 .mob-menu-social {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-social__item:not(:last-child) {
