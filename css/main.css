@@ -446,6 +446,13 @@ body {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
 .close-button {
   position: absolute;
   top: 8px;
@@ -534,10 +541,16 @@ body {
 .checkbox__label {
   display: flex;
   justify-content: center;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+  }
 }
 
 .form-field__checkbox:checked + .checkbox__label .form-field__btn {
@@ -592,6 +605,13 @@ body {
   background-size: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 237px;
+    height: unset;
+  }
+}
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(../images/mobile/mobile/Header-img@2x-min.jpg), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -632,13 +652,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    font-weight: 900;
+  .hero__title {
     font-size: 44px;
     line-height: 1.36em;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
   }
 }
 

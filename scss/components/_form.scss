@@ -86,11 +86,15 @@
   display: flex;
   justify-content: center;
 
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  @media screen and (min-width:1200px) {
+    font-size: 14px;
+  }
 }
 
 .form-field__checkbox:checked + .checkbox__label .form-field__btn {
