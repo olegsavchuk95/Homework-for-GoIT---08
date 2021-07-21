@@ -162,9 +162,13 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
   .nav {
-    display: none;
+    display: flex;
   }
 }
 
@@ -211,18 +215,14 @@ body {
 }
 
 .contacts {
+  display: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
-  .contacts {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .contacts {
+    display: flex;
     flex-direction: column;
     margin-top: 21px;
     margin-left: auto;

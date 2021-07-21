@@ -69,10 +69,10 @@
 
 .nav {
 
-  @media screen and (max-width: 768px) {
+  display: none; 
 
-   display: none;
-    
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 
 }
@@ -134,13 +134,10 @@
 
 .contacts {
 
-  @media screen and (max-width: 768px) {
-
-    display: none;
-     
-   }
+  display: none;
 
    @media screen and (min-width: 768px) {
+    display: flex; 
     flex-direction: column;
     margin-top: 21px;
     margin-left: auto;
