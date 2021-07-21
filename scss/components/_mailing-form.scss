@@ -1,73 +1,110 @@
 .footer-form {
 
-    position: relative;
-  
-    margin-left: 93px;
-  
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .footer-form__title {
-  
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-left: 93px;
+  }
+
+  &__title {
+    margin-top: 60px;
     padding-bottom: 20px;
-  
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-  
+
     color: $white;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 0px;
+      padding-bottom: 20px;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
   
+      color: $white;
+    }
   }
-  
-  .footer-form__item {
-  
-    display: flex;
-  
+
+  &__item {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
-  
-  .footer-form__input {
-  
-    width: 358px;
+
+  &__input {
+    width: 100%;
     height: 50px;
-  
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
-  
+
     background: none;
-  
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    background: none;
   }
-  
-  .footer-form__btn {
-  
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  }
+
+  &__btn {
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    margin-top: 20px;
+
     width: 200px;
     height: 50px;
-  
+
     margin-left: 12px;
-  
+
     background: $accent-color;
     border-radius: 4px;
     border: none;
-  
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-  
+
     letter-spacing: 0.06em;
-  
+
     color: $white;
-  
+
     cursor: pointer;
-  
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 0px;
+    }
   }
-  
-  .footer-form__icon {
+
+  &__icon {
     margin-left: 10px;
-  
+
     fill: $white;
-  
   }
+}
+
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+}

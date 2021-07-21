@@ -1,17 +1,72 @@
 .hero {
   text-align: center;
+  width: 100%;
+  height: 400px;
+  padding: 118px 45px;
 
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1.4em;
-  letter-spacing: 0.06em;
+  background-image: url(../images/mobile/mobile/Header-img-min.jpg),
+  linear-gradient(       
+    rgba(47, 48, 58, 0.4),       
+    rgba(47, 48, 58, 0.4));
+    @media (min-device-pixel-ratio: 2),   
+    (min-resolution: 192dpi),   
+    (min-resolution: 2dppx) {     
+      background-image: url(../images/mobile/mobile/Header-img@2x-min.jpg),     
+      linear-gradient(       
+        rgba(47, 48, 58, 0.4),       
+        rgba(47, 48, 58, 0.4));
+      }
 
-  color: $white;
-  background-image: url(../images/header-image-copy.jpg);
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/tablet/Header-img-min.jpg),
+    linear-gradient(       
+      rgba(47, 48, 58, 0.4),       
+      rgba(47, 48, 58, 0.4));
+      @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),   
+      screen and (min-width: 768px) and (min-resolution: 192dpi),   
+      screen and (min-width: 768px) and (min-resolution: 2dppx) {     
+        background-image: url(../images/tablet/tablet/Header-mg@2x-min.jpg),     
+        linear-gradient(       
+          rgba(47, 48, 58, 0.4),       
+          rgba(47, 48, 58, 0.4));
+        }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/desktop/hero-min.jpg),
+    linear-gradient(       
+      rgba(47, 48, 58, 0.4),       
+      rgba(47, 48, 58, 0.4));
+      @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),   
+      screen and (min-width: 1200px) and (min-resolution: 192dpi),   
+      screen and (min-width: 1200px) and (min-resolution: 2dppx) {     
+        background-image: url(../images/desktop/desktop/hero2x-min.jpg),     
+        linear-gradient(       
+          rgba(47, 48, 58, 0.4),       
+          rgba(47, 48, 58, 0.4));
+        }
+  }
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   &__title {
-    padding-top: 200px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: $white;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  
+    color: $white;
   }
 }
